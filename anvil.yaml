@@ -30,8 +30,8 @@ db_schema:
     indexes: []
     server: full
     title: Users
-name: Minimal Theme 1
-package_name: Minimal_Theme_1
+name: Conjunto Real
+package_name: Conjunto_Real
 runtime_options:
   client_version: '3'
   server_spec: {base: python314}
