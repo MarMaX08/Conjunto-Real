@@ -1,41 +1,5 @@
 allow_embedding: false
-db_schema:
-  table_2:
-    client: none
-    columns: []
-    indexes: []
-    server: full
-    title: Table 2
-  users:
-    client: none
-    columns:
-    - admin_ui: {order: 0, width: 200}
-      client_hidden: false
-      name: email
-      type: string
-    - admin_ui: {order: 1, width: 200}
-      client_hidden: true
-      name: enabled
-      type: bool
-    - admin_ui: {order: 2, width: 200}
-      client_hidden: true
-      name: last_login
-      type: datetime
-    - admin_ui: {order: 3, width: 200}
-      client_hidden: true
-      name: password_hash
-      type: string
-    - admin_ui: {order: 4, width: 200}
-      client_hidden: true
-      name: n_password_failures
-      type: number
-    - admin_ui: {order: 5, width: 200}
-      client_hidden: true
-      name: confirmed_email
-      type: bool
-    indexes: []
-    server: full
-    title: Users
+db_schema: {}
 name: Conjunto Real
 package_name: Conjunto_Real
 runtime_options:
