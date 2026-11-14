@@ -1,5 +1,11 @@
 allow_embedding: false
 db_schema:
+  table_2:
+    client: none
+    columns: []
+    indexes: []
+    server: full
+    title: Table 2
   users:
     client: none
     columns:
