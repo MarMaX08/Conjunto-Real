@@ -11,3 +11,8 @@ class Form2_copy(Form2_copyTemplate):
     super().__init__(**properties)
 
     # Any code you write here will run before the form opens.
+
+  @handle("check_box_39", "change")
+  def check_box_39_change(self, **event_args):
+    """This method is called when this checkbox is checked or unchecked"""
+    pass  # Write Code Here
