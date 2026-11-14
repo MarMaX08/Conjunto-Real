@@ -16,3 +16,8 @@ class Form2_copy(Form2_copyTemplate):
   def check_box_39_change(self, **event_args):
     """This method is called when this checkbox is checked or unchecked"""
     pass  # Write Code Here
+
+  @handle("button_1", "click")
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1')
