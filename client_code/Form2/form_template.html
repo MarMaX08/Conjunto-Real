@@ -1,17 +1,44 @@
 <anvil-form layout="Conjunto_Real.Layouts.BaseLayout">
   <anvil-block slot="title">
     <anvil-component type="Label" name="label_1" prop:text="Evaluación Real" prop:bold="true" prop:font_size="36"></anvil-component>
+    <anvil-component type="Label" name="label_9" prop:text="DATOS DEL ASTRONAUTA" prop:bold="true" prop:align="left"></anvil-component>
   </anvil-block>
   <anvil-block slot="content">
+    <anvil-component type="Button" name="button_2" prop:text="Añadir astronauta" prop:align="center"></anvil-component>
+    <anvil-component type="Label" name="label_11" prop:text="Coloque los datos normales" prop:underline="false" prop:italic="false" prop:bold="true"></anvil-component>
     <anvil-component type="TextBox" name="text_box_1" prop:text="Nombre y apellido"></anvil-component>
+    <anvil-component type="FlowPanel" name="flow_panel_3" prop:align="left">
+      <anvil-component type="Label" name="label_4" prop:text="Edad (Años):"></anvil-component>
+      <anvil-component type="TextBox" name="text_box_4" container:width="null" container:expand="true"></anvil-component>
+    </anvil-component>
     <anvil-component type="FlowPanel" name="flow_panel_1" prop:align="left">
       <anvil-component type="Label" name="label_2" prop:text="Masa (Kg):"></anvil-component>
       <anvil-component type="TextBox" name="text_box_2" container:width="null" container:expand="true"></anvil-component>
     </anvil-component>
+    <anvil-component type="FlowPanel" name="flow_panel_5" prop:align="left">
+      <anvil-component type="Label" name="label_6" prop:text="Temperatura corporal (K)"></anvil-component>
+      <anvil-component type="TextBox" name="text_box_6" container:width="null" container:expand="true"></anvil-component>
+    </anvil-component>
     <anvil-component type="FlowPanel" name="flow_panel_2" prop:align="left">
-      <anvil-component type="Label" name="label_3" prop:text="Presión arterial normal (mm Hg):"></anvil-component>
+      <anvil-component type="Label" name="label_3" prop:text="Presión arterial alta (mm Hg):"></anvil-component>
       <anvil-component type="TextBox" name="text_box_3" prop:align="left" container:width="855" container:expand="true"></anvil-component>
     </anvil-component>
-    <anvil-component type="Button" name="button_1" prop:text="Añadir astronauta"></anvil-component>
+    <anvil-component type="FlowPanel" name="flow_panel_7" prop:align="left">
+      <anvil-component type="Label" name="label_8" prop:text="Presión arterial baja (mm Hg):"></anvil-component>
+      <anvil-component type="TextBox" name="text_box_8" container:width="null" container:expand="true"></anvil-component>
+    </anvil-component>
+    <anvil-component type="FlowPanel" name="flow_panel_8" prop:align="left">
+      <anvil-component type="Label" name="label_10" prop:text="Glucosa en sangre (mg/dL)"></anvil-component>
+      <anvil-component type="TextBox" name="text_box_9" container:width="null" container:expand="true"></anvil-component>
+    </anvil-component>
+    <anvil-component type="FlowPanel" name="flow_panel_4" prop:align="left">
+      <anvil-component type="Label" name="label_5" prop:text="Frecuencia cardíaca (bpm):"></anvil-component>
+      <anvil-component type="TextBox" name="text_box_5" container:width="null" container:expand="true"></anvil-component>
+    </anvil-component>
+    <anvil-component type="FlowPanel" name="flow_panel_6" prop:align="left">
+      <anvil-component type="Label" name="label_7" prop:text="Saturación O₂:"></anvil-component>
+      <anvil-component type="TextBox" name="text_box_7" container:width="null" container:expand="true"></anvil-component>
+    </anvil-component>
   </anvil-block>
+  <anvil-block slot="actions"></anvil-block>
 </anvil-form>
