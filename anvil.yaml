@@ -46,6 +46,48 @@ db_schema:
     indexes: []
     server: full
     title: Astronautas
+  valores_corporales:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: ID
+      type: number
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: Edad
+      type: number
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: Estatura
+      type: number
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: Masa
+      type: number
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: Presión arterial sistólica
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: Presión arterial diastólica
+      type: number
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: Glucosa en sangre
+      type: number
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: Frecuencia cardíaca
+      type: number
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: Saturacion de O2
+      type: number
+    indexes: []
+    server: full
+    title: Valores corporales
 name: Conjunto Real
 package_name: Conjunto_Real
 runtime_options:
