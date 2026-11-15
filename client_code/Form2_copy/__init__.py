@@ -19,7 +19,7 @@ class Form2_copy(Form2_copyTemplate):
     """This method is called when this checkbox is checked or unchecked"""
     fila = app_tables.astronautas.add_row(
       **{
-      "ID": int(s,
+      "ID": int(self,
       "Nombre completo": self.nombre.text,
       "Edad": int(self.edad.text),
       "Estatura": int(self.estatura.text),
