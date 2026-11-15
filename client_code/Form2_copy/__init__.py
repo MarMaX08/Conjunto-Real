@@ -44,5 +44,22 @@ class Form2_copy(Form2_copyTemplate):
       "Tiempo en el espacio": int(self.tiempo.text)
       }
     )
+
+    fila1 = app_tables.sintomas.add_row(
+      **{
+      "ID": int(self.id),
+      "N": int(len(filas) + 1),
+      "D. Cabeza": ,
+      "Estatura": int(self.estatura.text),
+      "Masa": int(self.masa.text),
+      "Presión arterial sistólica": int(self.presiona.text),
+      "Presión arterial diastólica": int(self.presionb.text),
+      "Glucosa en sangre": float(self.glucosa.text),
+      "Frecuencia cardíaca": int(self.pulso.text),
+      "Saturación de O2": float(self.o2.text),
+      "Temperatura corporal": int(self.temperatura.text),
+      "Tiempo en el espacio": int(self.tiempo.text)
+      }
+    )
     id2=self.id
     open_form('Form3', id2)

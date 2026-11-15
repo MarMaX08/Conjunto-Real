@@ -401,6 +401,10 @@ db_schema:
       client_hidden: false
       name: O2 bajo
       type: bool
+    - admin_ui: {order: 89, width: 200}
+      client_hidden: false
+      name: D. Cuello
+      type: bool
     indexes: []
     server: full
     title: Enfermedades
