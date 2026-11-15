@@ -125,6 +125,26 @@ db_schema:
       client_hidden: false
       name: Estreñimiento
       type: bool
+    - admin_ui: {order: 19, width: 200}
+      client_hidden: false
+      name: Dolor al evacuar
+      type: bool
+    - admin_ui: {order: 20, width: 200}
+      client_hidden: false
+      name: Mareos
+      type: bool
+    - admin_ui: {order: 21, width: 200}
+      client_hidden: false
+      name: Vértigo
+      type: bool
+    - admin_ui: {order: 22, width: 200}
+      client_hidden: false
+      name: Desorientación
+      type: bool
+    - admin_ui: {order: 23, width: 200}
+      client_hidden: false
+      name: Dificultad para concentrarse
+      type: bool
     indexes: []
     server: full
     title: Enfermedades
