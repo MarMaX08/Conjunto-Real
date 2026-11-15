@@ -17,13 +17,4 @@ class Form1(Form1Template):
 
   @handle("button_2", "click")
   def button_2_click(self, **event_args):
-    
-
-    fila = app_tables.astronautas.add_row(
-        **{
-          "ID"=2,
-        "Nombre completo"="a",
-        "edad=75,
-        estatura=98
-    )
     open_form('Form2_copy')
