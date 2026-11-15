@@ -16,10 +16,11 @@ class Form2_copy(Form2_copyTemplate):
   @handle("check_box_39", "change")
   def check_box_39_change(self, **event_args):
     """This method is called when this checkbox is checked or unchecked"""
+    filas = app_tables.evaluacionesd.search(id=self.i)
     fila = app_tables.astronautas.add_row(
       **{
-      "ID": int(),
-      "Nombre completo": self.nombre.text,
+      "ID": int(self.id),
+      "N": int(len(filas) + 1)
       "Edad": int(self.edad.text),
       "Estatura": int(self.estatura.text),
       "Masa": int(self.masa.text),
@@ -27,7 +28,8 @@ class Form2_copy(Form2_copyTemplate):
       "Presión arterial diastólica": int(self.presionb.text),
       "Glucosa en sangre": float(self.glucosa.text),
       "Frecuencia cardíaca": int(self.pulso.text),
-      "Saturación de O2": float(self.o2.text)
+      "Saturación de O2": float(self.o2.text),
+      "Temperatura corporal": self.temp
       }
     )
     open_form('Form3')
