@@ -17,16 +17,16 @@ class Form2(Form2Template):
     """This method is called when the button is clicked"""
     fila = app_tables.astronautas.add_row(
       **{
-      "ID": 1,
-      "Nombre completo": self.nombre,
-      "Edad": int(,
-      "Estatura": 1.75,
-      "Masa": 70,
-      "Presión arterial sistólica": 120,
-      "Presión arterial diastólica": 80,
-      "Glucosa en sangre": 90,
-      "Frecuencia cardíaca": 70,
-      "Saturación de O2": 98
+      "ID": int(1+len(app_tables.astronautas.search())),
+      "Nombre completo": self.nombre.text,
+      "Edad": int(self.edad.text),
+      "Estatura": int(self.estatura.text),
+      "Masa": int(self.masa.text),
+      "Presión arterial sistólica": int(self.presiona.text),
+      "Presión arterial diastólica": int(self.presionb.text),
+      "Glucosa en sangre": float(self.glucosa.text),
+      "Frecuencia cardíaca": int(self.pulso.text),
+      "Saturación de O2": float(self.o2.text)
       }
     )
     open_form('Form1')

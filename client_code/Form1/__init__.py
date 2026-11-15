@@ -9,6 +9,11 @@ import anvil.server
 class Form1(Form1Template):
   def __init__(self, **properties):
     super().__init__(**properties)
+    filas = app_tables.astronautas.search()
+
+    self.drop_down_1.items = [
+      fila['Nombre completo'] for fila in filas
+    ]
 
   @handle("button_1", "click")
   def button_1_click(self, **event_args):
@@ -17,4 +22,8 @@ class Form1(Form1Template):
 
   @handle("button_2", "click")
   def button_2_click(self, **event_args):
+    id=app_tables.astronautas.get(nombre="Marcos")['ID']
+    print(id)
     open_form('Form2_copy')
+
+  
