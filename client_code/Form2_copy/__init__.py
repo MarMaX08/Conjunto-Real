@@ -24,16 +24,16 @@ class Form2_copy(Form2_copyTemplate):
     """This method is called when the button is clicked"""
     open_form('Form1')
 
-        # Radiación acumulada (en microsieverts, mSv)
-       self.radiacion_total = 0
-        self.segundos = 0
+    # Radiación acumulada (en microsieverts, mSv)
+    self.radiacion_total = 0
+    self.segundos = 0
 
-        # El timer se ejecuta cada 1 segundo
-        self.timer_radiacion.interval = 1
+    # El timer se ejecuta cada 1 segundo
+    self.timer_radiacion.interval = 1
 
-        self.label_radiacion_total.text = "Radiación acumulada: 0.00 mSv"
-        self.label_radiacion_actual.text = "Radiación actual: 0.00 mSv/s"
-        self.label_imc.text = "IMC: --"
+    self.label_radiacion_total.text = "Radiación acumulada: 0.00 mSv"
+    self.label_radiacion_actual.text = "Radiación actual: 0.00 mSv/s"
+    self.label_imc.text = "IMC: --"
 
     # ---------- RADIACIÓN ----------
     ERROR_EXPERIMENTAL = 0.10  # 10 %
@@ -89,4 +89,3 @@ class Form2_copy(Form2_copyTemplate):
       @handle("button_1", "click")
       def button_1_click(self, **event_args):
         open_form('Form1')
-while 
