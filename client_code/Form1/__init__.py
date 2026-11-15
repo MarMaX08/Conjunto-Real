@@ -24,5 +24,4 @@ class Form1(Form1Template):
   def button_2_click(self, **event_args):
     id=app_tables.astronautas.get(**{'Nombre completo': self.selector.selected_value})['ID']
     id = self.id
-    open_form('Form2', id)
-    open_form('Form2_copy')
+    open_form('Form2_copy', id)
