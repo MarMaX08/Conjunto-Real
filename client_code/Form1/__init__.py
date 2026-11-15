@@ -11,7 +11,7 @@ class Form1(Form1Template):
     super().__init__(**properties)
     filas = app_tables.astronautas.search()
 
-    self.drop_down_1.items = [
+    self.selector.items = [
       fila['Nombre completo'] for fila in filas
     ]
 
@@ -22,8 +22,5 @@ class Form1(Form1Template):
 
   @handle("button_2", "click")
   def button_2_click(self, **event_args):
-    id=app_tables.astronautas.get(nombre="Marcos")['ID']
-    print(id)
+    id=app_tables.astronautas.get(**{'Nombre completo': self.selector.selected_value})['ID']
     open_form('Form2_copy')
-
-  
