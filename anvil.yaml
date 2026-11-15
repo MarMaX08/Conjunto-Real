@@ -46,6 +46,372 @@ db_schema:
     indexes: []
     server: full
     title: Astronautas
+  enfermedades:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: Síntomas
+      type: string
+    indexes: []
+    server: full
+    title: Enfermedades
+  sintomas:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: D. Cabeza
+      type: bool
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: D. Ojos
+      type: bool
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: D. Cuello
+      type: bool
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: D. Abdomen
+      type: bool
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: D. Oído
+      type: bool
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: D. Estómago
+      type: bool
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: D. Pecho
+      type: bool
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: D. Espalda
+      type: bool
+    - admin_ui: {order: 8, width: 216}
+      client_hidden: false
+      name: D. Músculo
+      type: bool
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: D. Articulaciones
+      type: bool
+    - admin_ui: {order: 10, width: 202}
+      client_hidden: false
+      name: Vómitos
+      type: bool
+    - admin_ui: {order: 11, width: 200}
+      client_hidden: false
+      name: Náuseas
+      type: bool
+    - admin_ui: {order: 12, width: 200}
+      client_hidden: false
+      name: Acidez
+      type: bool
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: Hinchazón
+      type: bool
+    - admin_ui: {order: 14, width: 200}
+      client_hidden: false
+      name: Diarrea
+      type: bool
+    - admin_ui: {order: 15, width: 200}
+      client_hidden: false
+      name: Pérdida de apetito
+      type: bool
+    - admin_ui: {order: 16, width: 200}
+      client_hidden: false
+      name: Estreñimiento
+      type: bool
+    - admin_ui: {order: 17, width: 200}
+      client_hidden: false
+      name: Dolor al evacuar
+      type: bool
+    - admin_ui: {order: 18, width: 200}
+      client_hidden: false
+      name: Mareos
+      type: bool
+    - admin_ui: {order: 19, width: 200}
+      client_hidden: false
+      name: Vértigo
+      type: bool
+    - admin_ui: {order: 20, width: 200}
+      client_hidden: false
+      name: Desorientación
+      type: bool
+    - admin_ui: {order: 21, width: 200}
+      client_hidden: false
+      name: Dificultad para concentrarse
+      type: bool
+    - admin_ui: {order: 22, width: 200}
+      client_hidden: false
+      name: Alteraciones del equilibrio
+      type: bool
+    - admin_ui: {order: 23, width: 200}
+      client_hidden: false
+      name: Hormigueo
+      type: bool
+    - admin_ui: {order: 24, width: 200}
+      client_hidden: false
+      name: Debilidad
+      type: bool
+    - admin_ui: {order: 25, width: 200}
+      client_hidden: false
+      name: Entumecimiento
+      type: bool
+    - admin_ui: {order: 26, width: 200}
+      client_hidden: false
+      name: Temblores
+      type: bool
+    - admin_ui: {order: 27, width: 200}
+      client_hidden: false
+      name: Visión borrosa
+      type: bool
+    - admin_ui: {order: 28, width: 200}
+      client_hidden: false
+      name: Visión doble
+      type: bool
+    - admin_ui: {order: 29, width: 200}
+      client_hidden: false
+      name: Destellos de luz
+      type: bool
+    - admin_ui: {order: 30, width: 200}
+      client_hidden: false
+      name: Dificultad para enfocar
+      type: bool
+    - admin_ui: {order: 31, width: 200}
+      client_hidden: false
+      name: Zumbidos en los oídos
+      type: bool
+    - admin_ui: {order: 32, width: 200}
+      client_hidden: false
+      name: Disminución de la audición
+      type: bool
+    - admin_ui: {order: 33, width: 200}
+      client_hidden: false
+      name: Sensibilidad a la luz
+      type: bool
+    - admin_ui: {order: 34, width: 200}
+      client_hidden: false
+      name: Tos
+      type: bool
+    - admin_ui: {order: 35, width: 200}
+      client_hidden: false
+      name: Dificultad para respirar
+      type: bool
+    - admin_ui: {order: 36, width: 200}
+      client_hidden: false
+      name: Sensación de falta de aire
+      type: bool
+    - admin_ui: {order: 37, width: 200}
+      client_hidden: false
+      name: Congestión nasal
+      type: bool
+    - admin_ui: {order: 38, width: 200}
+      client_hidden: false
+      name: Irritación de garganta
+      type: bool
+    - admin_ui: {order: 39, width: 200}
+      client_hidden: false
+      name: Estornudos
+      type: bool
+    - admin_ui: {order: 40, width: 200}
+      client_hidden: false
+      name: Dolor al respirar
+      type: bool
+    - admin_ui: {order: 41, width: 200}
+      client_hidden: false
+      name: Palpitaciones
+      type: bool
+    - admin_ui: {order: 42, width: 200}
+      client_hidden: false
+      name: Mareos al incorporarse
+      type: bool
+    - admin_ui: {order: 43, width: 200}
+      client_hidden: false
+      name: Sensación de desmayo
+      type: bool
+    - admin_ui: {order: 44, width: 200}
+      client_hidden: false
+      name: Hinchazón de extremidades
+      type: bool
+    - admin_ui: {order: 45, width: 200}
+      client_hidden: false
+      name: Pérdida de fuerza
+      type: bool
+    - admin_ui: {order: 46, width: 200}
+      client_hidden: false
+      name: Fatiga muscular
+      type: bool
+    - admin_ui: {order: 47, width: 200}
+      client_hidden: false
+      name: Calambres
+      type: bool
+    - admin_ui: {order: 48, width: 200}
+      client_hidden: false
+      name: Rigidez muscular
+      type: bool
+    - admin_ui: {order: 49, width: 200}
+      client_hidden: false
+      name: Dolor articular
+      type: bool
+    - admin_ui: {order: 50, width: 200}
+      client_hidden: false
+      name: Dificultad de movimiento
+      type: bool
+    - admin_ui: {order: 51, width: 200}
+      client_hidden: false
+      name: Dolor óseo
+      type: bool
+    - admin_ui: {order: 52, width: 200}
+      client_hidden: false
+      name: Dolor al orinar
+      type: bool
+    - admin_ui: {order: 53, width: 200}
+      client_hidden: false
+      name: Aumento de la frecuencia urinaria
+      type: bool
+    - admin_ui: {order: 54, width: 200}
+      client_hidden: false
+      name: Disminución de la cantidad de la orina
+      type: bool
+    - admin_ui: {order: 55, width: 200}
+      client_hidden: false
+      name: Cambios en el color de la orina
+      type: bool
+    - admin_ui: {order: 56, width: 200}
+      client_hidden: false
+      name: Dificultad para orinar
+      type: bool
+    - admin_ui: {order: 57, width: 200}
+      client_hidden: false
+      name: Dolor en la lumbar o en los costados
+      type: bool
+    - admin_ui: {order: 58, width: 200}
+      client_hidden: false
+      name: Erupciones cutáneas
+      type: bool
+    - admin_ui: {order: 59, width: 200}
+      client_hidden: false
+      name: Picazón
+      type: bool
+    - admin_ui: {order: 60, width: 200}
+      client_hidden: false
+      name: Enrojecimiento
+      type: bool
+    - admin_ui: {order: 61, width: 200}
+      client_hidden: false
+      name: Sequedad de la piel
+      type: bool
+    - admin_ui: {order: 62, width: 200}
+      client_hidden: false
+      name: Sudoración excesiva
+      type: bool
+    - admin_ui: {order: 63, width: 200}
+      client_hidden: false
+      name: Escalofríos
+      type: bool
+    - admin_ui: {order: 64, width: 200}
+      client_hidden: false
+      name: Sensación de fiebre
+      type: bool
+    - admin_ui: {order: 65, width: 200}
+      client_hidden: false
+      name: Insomio
+      type: bool
+    - admin_ui: {order: 65, width: 200}
+      client_hidden: false
+      name: Somnolencia excesiva
+      type: bool
+    - admin_ui: {order: 66, width: 200}
+      client_hidden: false
+      name: Fatiga persistente
+      type: bool
+    - admin_ui: {order: 67, width: 200}
+      client_hidden: false
+      name: Irritabilidad
+      type: bool
+    - admin_ui: {order: 68, width: 200}
+      client_hidden: false
+      name: Ansiedad
+      type: bool
+    - admin_ui: {order: 69, width: 200}
+      client_hidden: false
+      name: Estrés
+      type: bool
+    - admin_ui: {order: 70, width: 200}
+      client_hidden: false
+      name: Cambios de humor
+      type: bool
+    - admin_ui: {order: 71, width: 200}
+      client_hidden: false
+      name: Dificultad de concentración
+      type: bool
+    - admin_ui: {order: 72, width: 200}
+      client_hidden: false
+      name: Tristeza constante
+      type: bool
+    - admin_ui: {order: -1, width: 200}
+      client_hidden: false
+      name: ID
+      type: number
+    indexes: []
+    server: full
+    title: Síntomas
+  valores_ambientales:
+    client: none
+    columns:
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: Aceleración de la nave
+      type: number
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: Fuerza G
+      type: number
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: Presión de cabina
+      type: number
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: Oxígeno
+      type: number
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: Dióxido de carbono
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: Temperatura ambiente
+      type: number
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: Humedad
+      type: number
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: Velocidad de la nave
+      type: number
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: Radiación acumulada
+      type: number
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: Tasa de radiación
+      type: number
+    - admin_ui: {order: -1, width: 200}
+      client_hidden: false
+      name: ID
+      type: number
+    indexes: []
+    server: full
+    title: Valores ambientales
   valores_corporales:
     client: none
     columns:
@@ -84,6 +450,14 @@ db_schema:
     - admin_ui: {order: 8, width: 200}
       client_hidden: false
       name: Saturacion de O2
+      type: number
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: Temperatura corporal
+      type: number
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: Tiempo en el espacio
       type: number
     indexes: []
     server: full
