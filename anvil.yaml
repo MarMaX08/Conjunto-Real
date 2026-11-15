@@ -367,6 +367,58 @@ db_schema:
       client_hidden: false
       name: N
       type: number
+    - admin_ui: {order: 73, width: 200}
+      client_hidden: false
+      name: Masa baja
+      type: bool
+    - admin_ui: {order: 74, width: 200}
+      client_hidden: false
+      name: Masa alta
+      type: bool
+    - admin_ui: {order: 75, width: 200}
+      client_hidden: false
+      name: Temperatura alta
+      type: bool
+    - admin_ui: {order: 76, width: 200}
+      client_hidden: false
+      name: Temperatura baja
+      type: bool
+    - admin_ui: {order: 77, width: 200}
+      client_hidden: false
+      name: Presión alta baja
+      type: bool
+    - admin_ui: {order: 78, width: 200}
+      client_hidden: false
+      name: Presión alta alta
+      type: bool
+    - admin_ui: {order: 79, width: 200}
+      client_hidden: false
+      name: Presión baja alta
+      type: bool
+    - admin_ui: {order: 80, width: 200}
+      client_hidden: false
+      name: Presión baja baja
+      type: bool
+    - admin_ui: {order: 81, width: 200}
+      client_hidden: false
+      name: Glucosa en sangre alta
+      type: bool
+    - admin_ui: {order: 82, width: 200}
+      client_hidden: false
+      name: Glucosa en sangre baja
+      type: bool
+    - admin_ui: {order: 83, width: 200}
+      client_hidden: false
+      name: Pulso bajo
+      type: bool
+    - admin_ui: {order: 84, width: 200}
+      client_hidden: false
+      name: Pulso alto
+      type: bool
+    - admin_ui: {order: 85, width: 200}
+      client_hidden: false
+      name: O2 bajo
+      type: bool
     indexes: []
     server: full
     title: Síntomas
