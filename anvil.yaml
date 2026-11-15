@@ -47,7 +47,7 @@ db_schema:
     server: full
     title: Astronautas
   enfermedades:
-    client: none
+    client: full
     columns:
     - admin_ui: {order: 0, width: 200}
       client_hidden: false
@@ -124,6 +124,90 @@ db_schema:
     - admin_ui: {order: 18, width: 200}
       client_hidden: false
       name: Estreñimiento
+      type: bool
+    - admin_ui: {order: 19, width: 200}
+      client_hidden: false
+      name: Dolor al evacuar
+      type: bool
+    - admin_ui: {order: 20, width: 200}
+      client_hidden: false
+      name: Mareos
+      type: bool
+    - admin_ui: {order: 21, width: 200}
+      client_hidden: false
+      name: Vértigo
+      type: bool
+    - admin_ui: {order: 22, width: 200}
+      client_hidden: false
+      name: Desorientación
+      type: bool
+    - admin_ui: {order: 23, width: 200}
+      client_hidden: false
+      name: Dificultad para concentrarse
+      type: bool
+    - admin_ui: {order: 24, width: 200}
+      client_hidden: false
+      name: Alteraciones del equilibrio
+      type: bool
+    - admin_ui: {order: 25, width: 200}
+      client_hidden: false
+      name: Hormigueo
+      type: bool
+    - admin_ui: {order: 26, width: 200}
+      client_hidden: false
+      name: Debilidad
+      type: bool
+    - admin_ui: {order: 27, width: 200}
+      client_hidden: false
+      name: Entumecimiento
+      type: bool
+    - admin_ui: {order: 28, width: 200}
+      client_hidden: false
+      name: Temblores
+      type: bool
+    - admin_ui: {order: 29, width: 200}
+      client_hidden: false
+      name: Visión borrosa
+      type: bool
+    - admin_ui: {order: 30, width: 200}
+      client_hidden: false
+      name: Visión doble
+      type: bool
+    - admin_ui: {order: 31, width: 200}
+      client_hidden: false
+      name: Destellos de luz
+      type: bool
+    - admin_ui: {order: 32, width: 200}
+      client_hidden: false
+      name: Dificultad para enfocar
+      type: bool
+    - admin_ui: {order: 33, width: 200}
+      client_hidden: false
+      name: Zumbidos en los oídos
+      type: bool
+    - admin_ui: {order: 34, width: 200}
+      client_hidden: false
+      name: Disminución de la audición
+      type: bool
+    - admin_ui: {order: 35, width: 200}
+      client_hidden: false
+      name: Sensibilidad a la luz
+      type: bool
+    - admin_ui: {order: 36, width: 200}
+      client_hidden: false
+      name: Tos
+      type: bool
+    - admin_ui: {order: 37, width: 200}
+      client_hidden: false
+      name: Dificultad para respirar
+      type: bool
+    - admin_ui: {order: 38, width: 200}
+      client_hidden: false
+      name: Sensación de falta de aire
+      type: bool
+    - admin_ui: {order: 39, width: 200}
+      client_hidden: false
+      name: Congestión nasal
       type: bool
     indexes: []
     server: full
@@ -491,7 +575,7 @@ db_schema:
     server: full
     title: Síntomas
   valores_ambientales:
-    client: none
+    client: full
     columns:
     - admin_ui: {order: 1, width: 200}
       client_hidden: false
@@ -541,7 +625,7 @@ db_schema:
     server: full
     title: Valores ambientales
   valores_corporales:
-    client: none
+    client: full
     columns:
     - admin_ui: {order: 0, width: 200}
       client_hidden: false
