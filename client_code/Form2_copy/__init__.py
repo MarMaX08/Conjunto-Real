@@ -6,7 +6,7 @@ from anvil.tables import app_tables
 import plotly.graph_objects as go
 
 class Form2_copy(Form2_copyTemplate):
-  def __init__(self id, **properties):
+  def __init__(self, id, **properties):
     # Set Form properties and Data Bindings.
     super().__init__(**properties)
     self.init_components(**properties)
@@ -16,11 +16,22 @@ class Form2_copy(Form2_copyTemplate):
   @handle("check_box_39", "change")
   def check_box_39_change(self, **event_args):
     """This method is called when this checkbox is checked or unchecked"""
-    filas = app_tables.evaluacionesd.search(id=self.i)
-    fila = app_tables.astronautas.add_row(
+    pass
+    
+
+  @handle("button_1", "click")
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1')
+
+  @handle("button_2", "click")
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    filas = app_tables.valores_corporales.search(ID=self.id)
+    fila = app_tables.valores_corporales.add_row(
       **{
       "ID": int(self.id),
-      "N": int(len(filas) + 1)
+      "N": int(len(filas) + 1),
       "Edad": int(self.edad.text),
       "Estatura": int(self.estatura.text),
       "Masa": int(self.masa.text),
@@ -29,12 +40,9 @@ class Form2_copy(Form2_copyTemplate):
       "Glucosa en sangre": float(self.glucosa.text),
       "Frecuencia cardíaca": int(self.pulso.text),
       "Saturación de O2": float(self.o2.text),
-      "Temperatura corporal": self.temp
+      "Temperatura corporal": int(self.temperatura.text),
+      "Tiempo en el espacio": int(self.tiempo.text)
       }
     )
-    open_form('Form3')
-
-  @handle("button_1", "click")
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('Form1')
+    id2=self.id
+    open_form('Form3', id2)
