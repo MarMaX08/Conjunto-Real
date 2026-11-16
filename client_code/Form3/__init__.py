@@ -6,15 +6,18 @@ from anvil.tables import app_tables
 
 
 class Form3(Form3Template):
-  def __init__(self, **properties):
+  def __init__(self, id2, **properties):
    
     super().__init__(**properties)
+    self.init_components(**properties)
+    self.id2 = id2
 
 
   @handle("button_1", "click")
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('Form1')
+    
   def analizar_enfermedades(self):
       # 1. Obtenemos los últimos valores o síntomas del paciente 
       # (Supongamos que los buscas de la última fila de 'valores_corporales' o los pasas como parámetro)

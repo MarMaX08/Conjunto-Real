@@ -652,7 +652,7 @@ db_schema:
       name: Picazón
       type: bool
     - admin_ui: {order: 60, width: 200}
-      client_hidden: true
+      client_hidden: false
       name: Enrojecimiento
       type: bool
     - admin_ui: {order: 61, width: 200}
