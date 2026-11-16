@@ -81,16 +81,24 @@ class Form2_copy(Form2_copyTemplate):
       "Fatiga persistente": self.fatigapersistente,
       "Dificultad de concentración": self.dificultaddeconcentracion,
       "Enrojecimiento": self.enrojecimiento, 
-        "Masa alta": ,
-      "Temperatura alta": ,
-      "Temperatura baja": ,
-      "Presión alta baja": ,
-      "Presión alta alta": ,
-      "Presión baja alta": ,
+      "Masa alta": (float(fila['Masa']) > float(app_table.astronautas.get(ID=self.id)['Masa']) + float(self.tiempo.text)*0.00208 or float(fila['Masa']) > int(app_table.astronautas.get(ID=self.id)['Masa']) + 20),
+      "Temperatura alta": (float(fila['Temperatura corporal']) > 310,
+      "Temperatura baja": (float(fila['Temperatura corporal']) < 308,
+      "Presión alta baja": (float(fila['Presión arterial sistólica']) < 90,
+      "Presión alta alta": (float(fila['Presión arterial sistólica']) > 140,
+      "Presión baja alta": (float(fila['Presión arterial diastólica']) > ,
       "Presión baja baja": ,
       "Pulso bajo": ,
       "Pulso alto": ,
         
+      }
+    )
+    fila = app_tables.valores_ambientales.add_row(
+      **{
+      "ID": int(self.id),
+      "N": int(len(filas) + 1),
+      "Radiación acumulada": int(self.radiacion.text),
+      "Tasa de radiación": int(self.tasaradiacion.text)
       }
     )
     id2=self.id
