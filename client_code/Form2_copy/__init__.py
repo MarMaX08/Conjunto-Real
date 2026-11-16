@@ -59,6 +59,19 @@ class Form2_copy(Form2_copyTemplate):
       "D. Espalda": self.espalda,
       "D. Músculo": self.musculo,
       "D. Articulaciones": self.articulaciones,
+      "Vómitos": self.nauseas,
+      "Hinchazón": self.hinchazón,
+      "Mareos": self.mareos,
+      "Vértigo": self.vértigo,
+      "Desorientación": self.desorientación,
+      "Dificultad para concentrarse": self.dificultadparaconcentrarse,
+      "Debilidad": self.Debilidad,
+      "Visión borrosa": self.visiónborrosa,
+      "Tos": self.tos,
+      "Dificultad para respirar": self.dificultadpararespirar,
+      "Sensación de falta de aire": self.sensacióndefaltadeaire,
+      "Dolor al respirar": self.doloralrespirar,
+      ""
       }
     )
     id2=self.id
