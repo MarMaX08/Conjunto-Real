@@ -83,7 +83,11 @@ class Form2_copy(Form2_copyTemplate):
       "Masa alta": self.masaalta,
       "Temperatura alta": self.temperaturaalta,
       "Temperatura baja": self.temperaturabaja,
-      "Presión alta baja": self
+      "Presión alta baja": self.presiónaltabaja,
+      "Presión alta alta": self.presiónaltaalta,
+      "Presión baja alta": self.presiónbajaalta,
+      "Presión baja baja": self.presiónbajabaja,
+      "Pulso bajo": self.
       }
     )
     id2=self.id
