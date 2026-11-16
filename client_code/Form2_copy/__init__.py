@@ -71,7 +71,8 @@ class Form2_copy(Form2_copyTemplate):
       "Dificultad para respirar": self.dificultadpararespirar,
       "Sensación de falta de aire": self.sensacióndefaltadeaire,
       "Dolor al respirar": self.doloralrespirar,
-      ""
+      "Palpitaciones": self.palpitaciones,
+      "Sensación de desmayo": self.
       }
     )
     id2=self.id
