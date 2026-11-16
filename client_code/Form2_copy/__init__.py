@@ -4,6 +4,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import plotly.graph_objects as go
+import random
 
 class Form2_copy(Form2_copyTemplate):
   def __init__(self, id, **properties):
@@ -82,15 +83,14 @@ class Form2_copy(Form2_copyTemplate):
       "Dificultad de concentración": self.dificultaddeconcentracion,
       "Enrojecimiento": self.enrojecimiento, 
       "Masa alta": (float(fila['Masa']) > float(app_table.astronautas.get(ID=self.id)['Masa']) + float(self.tiempo.text)*0.00208 or float(fila['Masa']) > int(app_table.astronautas.get(ID=self.id)['Masa']) + 20),
-      "Temperatura alta": (float(fila['Temperatura corporal']) > 310,
-      "Temperatura baja": (float(fila['Temperatura corporal']) < 308,
-      "Presión alta baja": (float(fila['Presión arterial sistólica']) < 90,
-      "Presión alta alta": (float(fila['Presión arterial sistólica']) > 140,
-      "Presión baja alta": (float(fila['Presión arterial diastólica']) > 90,
-      "Presión baja baja": (float(fila['Presión arterial diastólica']) < 60,
-      "Pulso bajo": ,
-      "Pulso alto": ,
-        
+      "Temperatura alta": (float(fila['Temperatura corporal']) > 310),
+      "Temperatura baja": (float(fila['Temperatura corporal']) < 308),
+      "Presión alta baja": (float(fila['Presión arterial sistólica']) < 90),
+      "Presión alta alta": (float(fila['Presión arterial sistólica']) > 140),
+      "Presión baja alta": (float(fila['Presión arterial diastólica']) > 90),
+      "Presión baja baja": (float(fila['Presión arterial diastólica']) < 60),
+      "Pulso bajo": (float(fila['Frecuencia cardíaca']) < 60),
+      "Pulso alto": (float(fila['Frecuencia cardíaca']) > 110),
       }
     )
     fila = app_tables.valores_ambientales.add_row(
@@ -101,5 +101,7 @@ class Form2_copy(Form2_copyTemplate):
       "Tasa de radiación": int(self.tasaradiacion.text)
       }
     )
+
+    
     id2=self.id
     open_form('Form3', id2)
