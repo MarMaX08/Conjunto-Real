@@ -72,7 +72,14 @@ class Form2_copy(Form2_copyTemplate):
       "Sensación de falta de aire": self.sensacióndefaltadeaire,
       "Dolor al respirar": self.doloralrespirar,
       "Palpitaciones": self.palpitaciones,
-      "Sensación de desmayo": self.Sensación dedesmayo,
+      "Sensación de desmayo": self.sensacióndedesmayo,
+      "Hinchazón de extremidades": self.hinchazóndeextremidades,
+      "Dolor articular": self.dolorarticular,
+      "Disminución de la cantidad de la orina": self.disminucióndelacantidaddelaorina,
+      "Sudoración excesiva": self.sudoraciónexcesiva,
+      "Sensación de fiebre": self.sensacióndefiebre,
+      "Fatiga persistente": self.Fatigapersistente,
+      "Dificultad de concentración": SE
       }
     )
     id2=self.id
