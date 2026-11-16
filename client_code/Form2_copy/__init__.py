@@ -79,7 +79,11 @@ class Form2_copy(Form2_copyTemplate):
       "Sudoración excesiva": self.sudoraciónexcesiva,
       "Sensación de fiebre": self.sensacióndefiebre,
       "Fatiga persistente": self.Fatigapersistente,
-      "Dificultad de concentración": SE
+      "Dificultad de concentración": self.dificultaddeconcentracion,
+      "Masa alta": self.masaalta,
+      "Temperatura alta": self.temperaturaalta,
+      "Temperatura baja": self.temperaturabaja,
+      "Presión alta baja": self
       }
     )
     id2=self.id
