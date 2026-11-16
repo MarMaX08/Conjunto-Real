@@ -86,8 +86,8 @@ class Form2_copy(Form2_copyTemplate):
       "Temperatura baja": (float(fila['Temperatura corporal']) < 308,
       "Presión alta baja": (float(fila['Presión arterial sistólica']) < 90,
       "Presión alta alta": (float(fila['Presión arterial sistólica']) > 140,
-      "Presión baja alta": (float(fila['Presión arterial diastólica']) > ,
-      "Presión baja baja": ,
+      "Presión baja alta": (float(fila['Presión arterial diastólica']) > 90,
+      "Presión baja baja": (float(fila['Presión arterial diastólica']) < 60,
       "Pulso bajo": ,
       "Pulso alto": ,
         
