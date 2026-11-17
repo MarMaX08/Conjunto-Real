@@ -6,7 +6,7 @@ from anvil.tables import app_tables
 
 
 class Form3(Form3Template):
-  def __init__(self, id2, **properties):
+  def __init__(self, id2, fsintomas, **properties):
    
     super().__init__(**properties)
     self.init_components(**properties)
