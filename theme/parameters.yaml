@@ -12,6 +12,7 @@ color_scheme:
   - {color: '#f9fbfc', name: Control Background Hover}
   - {color: '#eef2f6', name: Control Disabled}
   - {color: '#eef5f7', name: Surface Muted}
+  - {color: '#de0a02', name: Delete}
 roles:
 - components: [Button]
   name: secondary-button

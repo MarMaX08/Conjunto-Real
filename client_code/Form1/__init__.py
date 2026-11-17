@@ -24,3 +24,30 @@ class Form1(Form1Template):
   def button_2_click(self, **event_args):
     id=app_tables.astronautas.get(**{'Nombre completo': self.selector.selected_value})['ID']
     open_form('Form2_copy', id)
+
+  @handle("button_3", "click")
+  def button_3_click(self, **event_args):
+    id=app_tables.astronautas.get(**{'Nombre completo': self.selector.selected_value})['ID']
+    nombre = self.selector.selected_value
+    fila1=app_tables.astronautas.search(**{'ID': id})
+    for fila in fila1:
+      fila.delete()
+
+    fila1=app_tables.sintomas.search(**{'ID': id})
+    for fila in fila1:
+      fila.delete()
+
+    fila1=app_tables.valores_ambientales.search(**{'ID': id})
+    for fila in fila1:
+      fila.delete()
+
+    fila1=app_tables.valores_corporales.search(**{'ID': id})
+    for fila in fila1:
+      fila.delete()
+      
+    alert(f"All records for astronaut {nombre} have been successfully deleted!")
+    filas = app_tables.astronautas.search()
+
+    self.selector.items = [
+      fila['Nombre completo'] for fila in filas
+    ]
