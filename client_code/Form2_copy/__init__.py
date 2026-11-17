@@ -46,7 +46,7 @@ class Form2_copy(Form2_copyTemplate):
       }
     )
 
-    fila1 = app_tables.sintomas.add_row(
+    self.fila1 = app_tables.sintomas.add_row(
       **{
       "ID": int(self.id),
       "N": int(len(filas) + 1),

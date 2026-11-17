@@ -27,27 +27,28 @@ class Form3(Form3Template):
       enfermedades_posibles = []
 
       # 4. Recorremos cada enfermedad para evaluar
+      # 4. Recorremos cada enfermedad para evaluar
+    sintomas={}__annotations__
       for enfermedad in todas_enfermedades:
-          nombre_enfermedad = enfermedad['Enfermedades']
-          compatible = True
-        
-          # Revisamos cada columna de síntoma en la tabla de enfermedades
-          # (Anvil permite leer las columnas de la fila como un diccionario)
-          for sintoma, valor_requerido in sintomas.items():
-              # Si la tabla tiene esa columna de síntoma
-              if sintoma in enfermedad:
-                  # Si la enfermedad requiere que el síntoma sea True, pero el paciente lo tiene en False
-                  if enfermedad[sintoma] == True and valor_requerido == Tue:
-                      compatible = False
-                      break # Descartamos esta enfermedad y pasamos a la siguiente
+        nombre_enfermedad = enfermedad['Enfermedades']
+        agregada = False
+          # Revisamos cada síntoma indicado por el paciente
+        for sintoma, valor_requerido in sintomas.items():
+          if sintoma in enfermedad:
+          # Si el paciente SÍ tiene el síntoma (valor_requerido == True), 
+          # PERO la enfermedad en la tabla dice que NO lo tiene (enfermedad[sintoma] == False)
+            if valor_requerido and enfermedad[sintoma]:
+             agregada = True
+             break # Descargamos esta enfermedad porque le falta un síntoma obligatorio
 
-          # Si pasó los filtros, es una candidata
-          if compatible:
-              enfermedades_posibles.append(nombre_enfermedad)
+              # Si cumplió con todo y no falló en ningún síntoma requerido, la agregamos
+        if agregada:
+          enfermedades_posibles.append(nombre_enfermedad)
 
       # 5. Mostramos el resultado en el Form3 (por ejemplo, en un RepeatingPanel o Label)
       # Si tienes un RepeatingPanel llamado 'repeating_panel_1':
-      self.repeating_panel_1.items = [{'nombre': e} for e in enfermedades_posibles]
+      # 5. Mostramos el resultado en la etiqueta (Label)
+      self.lista.text = "\n".join([f"- {e}" for e in enfermedades_posibles])
     
       # O si prefieres mostrarlo en una etiqueta (Label):
       # self.label_resultado.text = ", ".join(enfermedades_posibles)
