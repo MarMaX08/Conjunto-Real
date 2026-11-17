@@ -6,11 +6,12 @@ from anvil.tables import app_tables
 
 
 class Form3(Form3Template):
-  def __init__(self, id2, fsintomas, **properties):
+  def __init__(self, id2, fs, **properties):
    
     super().__init__(**properties)
     self.init_components(**properties)
     self.id2 = id2
+    self.fs=fs
 
 
   @handle("button_1", "click")
@@ -19,18 +20,7 @@ class Form3(Form3Template):
     open_form('Form1')
     
   def analizar_enfermedades(self):
-      # 1. Obtenemos los últimos valores o síntomas del paciente 
-      # (Supongamos que los buscas de la última fila de 'valores_corporales' o los pasas como parámetro)
-      ultimo_valor = app_tables.sintomas.get_by_id(...) # O tu método para obtener los datos del paciente actual
-    
-      # 2. Definimos qué síntomas/alertas están activas (True) para este paciente
-      # Ejemplo basado en tus columnas de la tabla de enfermedades:
-      sintomas_paciente = {
-          "Fiebre": True, # Esto vendría de lo que marcó en los formularios
-          "Mareos": False,
-          "Tos": True,
-          # ... puedes mapear aquí todas las alertas que salieron del Form2
-      }
+      
 
       # 3. Traemos todas las enfermedades de la tabla
       todas_enfermedades = app_tables.enfermedades.search()
