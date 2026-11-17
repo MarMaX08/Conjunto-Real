@@ -33,11 +33,11 @@ class Form3(Form3Template):
         
           # Revisamos cada columna de síntoma en la tabla de enfermedades
           # (Anvil permite leer las columnas de la fila como un diccionario)
-          for sintoma, valor_requerido in sintomas_paciente.items():
+          for sintoma, valor_requerido in sintomas.items():
               # Si la tabla tiene esa columna de síntoma
               if sintoma in enfermedad:
                   # Si la enfermedad requiere que el síntoma sea True, pero el paciente lo tiene en False
-                  if enfermedad[sintoma] == True and valor_requerido == False:
+                  if enfermedad[sintoma] == True and valor_requerido == Tue:
                       compatible = False
                       break # Descartamos esta enfermedad y pasamos a la siguiente
 
