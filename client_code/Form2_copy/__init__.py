@@ -103,4 +103,5 @@ class Form2_copy(Form2_copyTemplate):
 
     
     id2=self.id
+    fsintomas=self.fila
     open_form('Form3', id2)

@@ -21,7 +21,7 @@ class Form3(Form3Template):
   def analizar_enfermedades(self):
       # 1. Obtenemos los últimos valores o síntomas del paciente 
       # (Supongamos que los buscas de la última fila de 'valores_corporales' o los pasas como parámetro)
-      ultimo_valor = app_tables.valores_corporales.get_by_id(...) # O tu método para obtener los datos del paciente actual
+      ultimo_valor = app_tables.sintomas.get_by_id(...) # O tu método para obtener los datos del paciente actual
     
       # 2. Definimos qué síntomas/alertas están activas (True) para este paciente
       # Ejemplo basado en tus columnas de la tabla de enfermedades:
